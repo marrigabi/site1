@@ -1,0 +1,10 @@
+site_name: Motivos para assistir Haikyuu !
+
+nav:
+ - Página Inicial: index.md
+ - Página 1: pagina1.md
+ - Página 2: pagina2.md
+ - Página 3: pagina3.md
+ - Página 4: pagina4.md
+ - Página 5: pagina5.md
+
