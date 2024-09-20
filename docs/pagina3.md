@@ -6,7 +6,7 @@ Configuração do Apache
 - Crie um arquivo de configuração em /etc/apache2/sites-available/site1.conf:
 
 apache
-
+````sh
 <VirtualHost *:80>
     ServerName site1.exemplo.com
     DocumentRoot /caminho/para/site1
@@ -16,11 +16,13 @@ apache
         Require all granted
     </Directory>
 </VirtualHost>
+````
+
 Configurar Host Virtual para WordPress:
 Crie um arquivo de configuração em /etc/apache2/sites-available/site2.conf:
 
 apache
-
+````sh
 <VirtualHost *:80>
     ServerName site2.exemplo.com
     DocumentRoot /var/www/html/site2
@@ -30,13 +32,15 @@ apache
         Require all granted
     </Directory>
 </VirtualHost>
+````
 
 Habilitar os Sites:
-```sh
+````sh
 
 sudo a2ensite site1.conf
 sudo a2ensite site2.conf
 sudo systemctl restart apache2
+````
 
 # Configuração do Nginx (Opcional)
 Se preferir usar Nginx, siga as instruções de configuração de blocos de servidor descritas anteriormente.

@@ -1,5 +1,8 @@
 site_name: Documentação
 
+theme:
+  name: readthedocs
+  
 nav:
  - Página Inicial: index.md
  - Página 1: pagina1.md

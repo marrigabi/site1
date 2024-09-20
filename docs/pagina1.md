@@ -26,20 +26,21 @@
 - Para acessar via SSH, você pode configurar a rede da VM para usar um adaptador de rede em modo bridge ou NAT com portas encaminhadas.
 
 ## Atualize o sistema:
-```sh
+````sh
 sudo apt update
 sudo apt upgrade
+````
 
 ## Instale o Apache
 
-```sh
+````sh
 sudo apt install apache2
 sudo systemctl start apache2
 sudo systemctl enable apache2
-
+````
 # Instale o Mkdocs
 
-```sh 
+````sh 
 sudo apt install python3-pip
 pip3 install mkdocs
-
+````
